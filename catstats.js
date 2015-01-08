@@ -287,7 +287,7 @@
       // player lost the powerup, save the time
       if(timerValue === false && player[timerName+'tr'] === true) {
         player[timerName+'tr'] = false;
-        player[timerName+'time'] = Date.now() - player[timerName+'start'];
+        player[timerName+'time'] += Date.now() - player[timerName+'start'];
         return;
       }
     }
